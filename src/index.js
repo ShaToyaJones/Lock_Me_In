@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './routes';
+// import About from './pages/About';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ export const store = createStore(rootReducer, middleware);
 
 ReactDOM.render(
   <Provider store={store}>
+    {/* <App /> */}
     <Routes />
   </Provider>,
   document.getElementById('root')
