@@ -1,152 +1,106 @@
 import React from "react";
-// import Container from "../components/Container";
-// import Row from "../components/Row";
-// import Col from "../components/Col";
+import BigCalendar from 'react-big-calendar';
+import moment from 'moment';
 
-const EventCalendar = require('react-event-calendar');
-
-const events = [
+const Events= [
     {
-        start: '2015-07-20',
-        end: '2015-07-02',
-        eventClasses: 'optionalEvent',
-        title: 'test event',
-        description: 'This is a test description of an event',
+      'title': 'All Day Event',
+      'allDay': true,
+      'start': new Date(2018, 0, 1),
+      'end': new Date(2018, 0, 2)
     },
     {
-        start: '2015-07-19',
-        end: '2015-07-25',
-        title: 'test event',
-        description: 'This is a test description of an event',
-        data: 'you can add what ever random data you may want to use later',
+      'title': 'Long Event',
+      'start': new Date(2018, 1, 7),
+      'end': new Date(2018, 1, 10)
     },
-];
+    {
+        'title': 'Final Presentation',
+        'start': new Date(2018, 1, 1),
+        'end': new Date(2018, 1, 1)
+      },
+    {
+      'title': 'DTS STARTS',
+      'start': new Date(2018, 2, 13, 0, 0, 0),
+      'end': new Date(2018, 2, 20, 0, 0, 0)
+    },
+  
+    {
+      'title': 'DTS ENDS',
+      'start': new Date(2018, 10, 6, 0, 0, 0),
+      'end': new Date(2018, 10, 13, 0, 0, 0)
+    },
+  
+    {
+      'title': 'Some Event',
+      'start': new Date(2018, 3, 9, 0, 0, 0),
+      'end': new Date(2018, 3, 9, 0, 0, 0)
+    },
+    {
+      'title': 'Conference',
+      'start': new Date(2018, 3, 11),
+      'end': new Date(2018, 3, 13),
+      desc: 'Big conference for important people'
+    },
+    {
+      'title': 'Meeting',
+      'start': new Date(2018, 3, 12, 10, 30, 0, 0),
+      'end': new Date(2018, 3, 12, 12, 30, 0, 0),
+      desc: 'Pre-meeting meeting, to prepare for the meeting'
+    },
+    {
+      'title': 'Lunch',
+      'start':new Date(2018, 3, 12, 12, 0, 0, 0),
+      'end': new Date(2018, 3, 12, 13, 0, 0, 0),
+      'desc': 'Power lunch'
+    },
+    {
+      'title': 'Meeting',
+      'start':new Date(2018, 3, 12,14, 0, 0, 0),
+      'end': new Date(2018, 3, 12,15, 0, 0, 0)
+    },
+    {
+      'title': 'Happy Hour',
+      'start':new Date(2018, 3, 12, 17, 0, 0, 0),
+      'end': new Date(2018, 3, 12, 17, 30, 0, 0),
+      desc: 'Most important meal of the day'
+    },
+    {
+      'title': 'Dinner',
+      'start':new Date(2018, 3, 12, 20, 0, 0, 0),
+      'end': new Date(2018, 3, 12, 21, 0, 0, 0)
+    },
+    {
+      'title': 'Birthday Party',
+      'start':new Date(2018, 3, 13, 7, 0, 0),
+      'end': new Date(2018, 3, 13, 10, 30, 0)
+    },
+    {
+      'title': 'Late Night Event',
+      'start':new Date(2018, 3, 17, 19, 30, 0),
+      'end': new Date(2018, 3, 18, 2, 0, 0)
+    },
+    {
+      'title': 'Multi-day Event',
+      'start':new Date(2018, 3, 20, 19, 30, 0),
+      'end': new Date(2018, 3, 22, 2, 0, 0)
+    }
+  ]
 
-<EventCalendar 
-    month={7}
-    year={2015}
-    events={events} 
-    onEventClick={(target, eventData, day) => console.log(eventData) 
+// Setup the localizer by providing the moment (or globalize) Object
+// to the correct localizer.
+BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
+
+const MyCalendar = props => (
+  <div>
+    <BigCalendar
+      events={Events}
+      startAccessor='start'
+      endAccessor='end'
+      titleAccessor='title'
+      descriptionAccessor='desc'
     />
+  </div>
+);
 
-// const Appointments = () =>
-
-// var indents = [];
-// for (var i = 0; i < this.props.level; i++) {
-//   indents.push(<span className='indent' key={i}></span>);
-// }
-// return (
-//    <div>
-//     {indents}
-//     "Some text value"
-//    </div>
-// );
-
-// moment.locale('it')
-
-// class Calendar extends React.Component {
-//   static defaultProps = {
-//     date: moment()
-//   };
-    
-//   static propTypes = {
-//     date: React.PropTypes.object.isRequired
-//   };
-
-//   constructor(props) {
-//     super(props)
-
-//     this.days = this.days.bind(this)
-//   }
-
-//   days() {
-//     var days = []
-
-//     moment.range(
-//       moment(this.props.date).startOf('month').startOf('week'), 
-//       moment(this.props.date).endOf('month').endOf('week')
-//     ).by('days', (day) => {
-//       let belongsToAsideMonth = !day.isSame(moment(this.props.date), 'month')
-      
-//       days.push(<li key={day.format('YYYYMMDD')} 
-//     //   push a component that holds events for day passed through the date
-//     // create event (kind of like a div)
-//     // ***first div to have FIXED height and width and overflow hidden
-//         // click event 
-//     // div for month
-//     // div for week
-//     // div for day
-//     // refer to days as events
-//     // all boxes need to be the same size
-//         // have a date place
-//     // inside the days we want boxes
-//         // we want to pull from database to pull the events
-//     // 
-//       className={"day" + (belongsToAsideMonth ? ' pale' : '')}>{day.format('D')}</li>)
-//     })
-    
-//     return days;
-//   }
-
-//   dayHeaders() {
-//     var dayHeaders = []
-
-//     moment.range(
-//       moment(this.props.date).startOf('week'), 
-//       moment(this.props.date).endOf('week')
-//     ).by('days', function(moment) {
-//       dayHeaders.push(<li key={moment.format('YYYYMMDD')} className="dayHeader">{moment.format('dd')}</li>)
-//     })
-    
-//     return dayHeaders;
-//   }
-    
-//   render() {
-//     return (
-//       <div className="calendar">
-//         <div className="goPreviousMonth">
-//           <i className="icono-caretLeftCircle" onClick={this.props.onMonthDecrement} />
-//         </div>
-//         <p className="monthHeader"><input value={this.props.date} onChange={this.props.onDateChange} /> — {moment(this.props.date).format('MMMM YYYY')}</p>
-//         <div className="goNextMonth">
-//           <i className="icono-caretRightCircle" onClick={this.props.onMonthIncrement} />
-//         </div>
-//         <ul className="days">
-//           {this.dayHeaders()}
-//           {this.days()}
-//         </ul>
-//       </div>
-//     );
-//   }
-// }
-
-// var store = Redux.createStore((state = {date: '1977-02-13'}, action) => {
-//   switch (action.type) {
-//     case 'INCREMENT_MONTH':
-//       return {date: moment(state.date).add(1, 'months')}
-//     case 'DECREMENT_MONTH':
-//       return {date: moment(state.date).subtract(1, 'months')}
-//     case 'CHANGE_DATE':
-//       console.log('CHANGE_DATE', action)
-//       return {date: action['date']}
-//     default:
-//       return state
-//   }
-// })
-
-// function render() {
-//   ReactDOM.render(
-//     <Calendar 
-//       onMonthIncrement={() => store.dispatch({ type: 'INCREMENT_MONTH' })}
-//       onMonthDecrement={() => store.dispatch({ type: 'DECREMENT_MONTH' })}
-//       onDateChange={(e) => { store.dispatch({type: 'CHANGE_DATE', date: e.target.value}) }}
-//       {...store.getState()} 
-//     />, 
-//     document.getElementById('application')
-//   )
-// }
-
-// render()
-
-// store.subscribe(render)
-
+export default MyCalendar;
