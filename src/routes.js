@@ -2,7 +2,7 @@ import React from 'react';
 import App from './containers/AppContainer';
 import About from './pages/About';
 import Appointments from "./pages/Appointments";
-import Client from './pages/Client';
+import Clients from './pages/Clients';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ const Routes = () => {
         <Route exact path="/" component={App} />
         <Route exact path="/about" component={About} />
         <Route exact path="/appointments" component={Appointments} />
-        <Route exact path="/client" component={Client} />
+        <Route exact path="/clients" component={Clients} />
       </div>
     </Router>
   )
