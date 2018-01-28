@@ -17,6 +17,7 @@ const App = () =>
         <Route exact path="/about" component={About} />
         <Route exact path="/appointments" component={Appointments} />
         <Route exact path="/clients" component={Clients} />
+        {/* create a technologies used page */}
       </Wrapper>
       <Footer />
     </div>

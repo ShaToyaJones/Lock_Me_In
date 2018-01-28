@@ -88,9 +88,9 @@ const Events= [
     }
   ]
 
-// Setup the localizer by providing the moment (or globalize) Object
+// Setup the localizer by providing the moment Object
 // to the correct localizer.
-BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
+BigCalendar.momentLocalizer(moment);
 
 const MyCalendar = props => (
   <div>
