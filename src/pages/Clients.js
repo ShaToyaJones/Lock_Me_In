@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
+// import Hero from "../components/Hero";
 
 class Clients extends Component {
   state = {
@@ -36,6 +37,7 @@ class Clients extends Component {
   // };
   render() {
     return (
+      <div>
       <Container style={{ minHeight: "80%" }}>
         <h1 className="text-center">Search By Client:</h1>
         <Alert
@@ -51,6 +53,9 @@ class Clients extends Component {
         />
         <SearchResults results={this.state.results} />
       </Container>
+      {/* <Hero backgroundImage="https://commons.wikimedia.org/wiki/File:Hair_Salon_Stations.jpg">
+        </Hero> */}
+      </div>
     );
   }
 }

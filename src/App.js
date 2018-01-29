@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Appointments from "./pages/Appointments";
+import Tech from "./pages/Tech";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -17,8 +18,8 @@ const App = () =>
         <Route exact path="/about" component={About} />
         <Route exact path="/appointments" component={Appointments} />
         <Route exact path="/clients" component={Clients} />
-        {/* create a technologies used page */}
-      </Wrapper>
+        <Route exact path="/tech" component={Tech} />
+        </Wrapper>
       <Footer />
     </div>
   </Router>;
