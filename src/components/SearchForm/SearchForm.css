@@ -1,9 +1,81 @@
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
 form.search {
   overflow: auto;
   margin-bottom: 10px;
 }
 
+body {
+  font-family: "Helvetica Oblique", cursive;
+  font-size: 16px;
+  line-height: 1.42857143;
+}
+
 form.search button[type="submit"] {
   float: right;
   margin-top: 10px;
+}
+
+.btn-success {
+  color: white;
+  background-color: lightcoral;
+  border-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
