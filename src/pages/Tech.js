@@ -6,7 +6,7 @@ import Col from "../components/Col";
 
 const Tech = () =>
   <div>
-    <Hero backgroundImage="https://pxhere.com/en/photo/1204851">
+    <Hero backgroundImage="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg">
       <h1>List of Technologies Used:</h1>
     </Hero>
     <Container style={{ marginTop: 30 }}>
@@ -15,6 +15,8 @@ const Tech = () =>
           <h1>Welcome To Lock Me In!</h1>
         </Col>
       </Row>
+      <Col size="md-12">
+      </Col>
       <Row>
         <Col size="md-12">
           <ol>
