@@ -7,7 +7,7 @@ import Col from "../components/Col";
 const Tech = () =>
   <div>
     <Hero backgroundImage="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg">
-      <h1>List of Technologies Used:</h1>
+      <h1>Technologies Used:</h1>
     </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
