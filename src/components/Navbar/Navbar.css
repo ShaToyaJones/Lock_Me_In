@@ -1,11 +1,15 @@
 nav.navbar.navbar-default {
   margin-bottom: 0;
 }
-  
-.navbar-header {
-  background-color: rgb(66, 248, 10);
+
+a.navbar-brand {
+  padding: 5px;
 }
 
 ul.nav.navbar-nav {
-  background-color: rgb(248, 116, 8);
+  float: right;
+}
+
+img {
+  width: 45%;
 }
