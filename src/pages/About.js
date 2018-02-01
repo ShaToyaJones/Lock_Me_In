@@ -3,39 +3,49 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import locs1 from "../images/locs1.jpg";
+import locs2 from "../images/locs2.jpg";
+import locs3 from "../images/locs3.jpg";
+import locs4 from "../images/locs4.jpg";
 
 const About = () =>
   <div>
     <Hero backgroundImage="https://upload.wikimedia.org/wikipedia/commons/d/d7/Planet_Hair.jpg">
       <h1>Lock Me In</h1>
-      <h2>Your official hair appointment app.</h2>
     </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To Lock Me In!</h1>
+        <center>
+          <h1>Welcome To Lock Me In</h1>
+          <h2>Your official hair appointment app!</h2>
+          </center>
         </Col>
       </Row>
       <Row>
-        <Col size="md-12">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            aliquet diam tortor, id consequat mauris ullamcorper eu. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Pellentesque et dui id justo finibus sollicitudin at
-            et metus. 
-          </p>
-          <p>
-            Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum
-            porttitor. Sed malesuada molestie velit ac viverra. Quisque a.
-          </p>
-          <p>
-            Etiam ut massa efficitur, gravida sapien non, condimentum sapien.
-            Suspendisse massa tortor, facilisis in neque sit amet, scelerisque
-            elementum tortor. Nullam eget nibh sit amet odio lobortis
-            ullamcorper. 
-          </p>
+      
+      <div id="images">
+        <Col size="sm-6">
+          <div className="locs1">
+            <img src={locs1} alt="locs1" />
+          </div>
         </Col>
+        <Col size="sm-6">
+          <div className="locs2">
+            <img src={locs2} alt="locs2" />
+            </div>
+        </Col>
+        <Col size="sm-6">
+          <div className="locs3">
+            <img src={locs3} alt="locs3" />
+            </div>
+        </Col>
+        <Col size="sm-6">
+          <div className="locs4">
+            <img src={locs4} alt="locs4" />
+            </div>
+        </Col>
+        </div>
       </Row>
     </Container>
   </div>;

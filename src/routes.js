@@ -4,7 +4,6 @@ import About from './pages/About';
 import Appointments from "./pages/Appointments";
 import Clients from './pages/Clients';
 import Tech from './pages/Tech';
-
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const Routes = () => {
