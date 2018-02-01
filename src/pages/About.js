@@ -17,7 +17,6 @@ import locs12 from "../images/locs12.jpg";
 
 import "./About.css";
 
-
 const About = () =>
   <div>
     <Hero backgroundImage="https://upload.wikimedia.org/wikipedia/commons/d/d7/Planet_Hair.jpg">
@@ -33,26 +32,26 @@ const About = () =>
         </Col>
       </Row>      
 
-<div class="row">
-  <div class="column">
+<div className="row">
+  <div className="column">
     <img src={locs1} alt="locs1" />
     <img src={locs2} alt="locs2" />
     <img src={locs3} alt="locs3" />
     <img src={locs4} alt="locs4" />
   </div>
-  <div class="column">
+  <div className="column">
     <img src={locs4} alt="locs4" />
     <img src={locs5} alt="locs5" />
     <img src={locs6} alt="locs6" />
     <img src={locs7} alt="locs7" />
   </div>
-  <div class="column">
+  <div className="column">
     <img src={locs7} alt="locs7" />
     <img src={locs9} alt="locs9" />
     <img src={locs10} alt="locs10" />
     <img src={locs11} alt="locs11" />
   </div>
-  <div class="column">
+  <div className="column">
     <img src={locs11} alt="locs11" />
     <img src={locs12} alt="locs12" />
     <img src={locs5} alt="locs3" />

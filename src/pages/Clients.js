@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
-// import Hero from "../components/Hero";
+import People from "../images/People.jpg";
 
 class Clients extends Component {
   state = {
@@ -12,33 +12,14 @@ class Clients extends Component {
     results: [],
     error: ""
   };
-
-  // // When the component mounts, get a list of all available base breeds and update this.state.breeds
-  // componentDidMount() {
-  //   API.getBaseClientsList()
-  //     .then(res => this.setState({ clients: res.data.message }))
-  //     .catch(err => console.log(err));
-  // }
-
-  // handleInputChange = event => {
-  //   this.setState({ search: event.target.value });
-  // };
-
-  // handleFormSubmit = event => {
-  //   event.preventDefault();
-  //   API.getClientsName(this.state.search)
-  //     .then(res => {
-  //       if (res.data.status === "error") {
-  //         throw new Error(res.data.message);
-  //       }
-  //       this.setState({ results: res.data.message, error: "" });
-  //     })
-  //     .catch(err => this.setState({ error: err.message }));
-  // };
+  
   render() {
     return (
       <div>
       <Container style={{ minHeight: "80%" }}>
+      <center>
+      <img src={People} alt="People" />
+      </center>
         <h1 className="text-center">Search By Client:</h1>
         <Alert
           type="danger"
@@ -53,8 +34,6 @@ class Clients extends Component {
         />
         <SearchResults results={this.state.results} />
       </Container>
-      {/* <Hero backgroundImage="https://commons.wikimedia.org/wiki/File:Hair_Salon_Stations.jpg">
-        </Hero> */}
       </div>
     );
   }

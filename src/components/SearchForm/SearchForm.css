@@ -17,11 +17,13 @@ body {
 form.search button[type="submit"] {
   float: right;
   margin-top: 10px;
+  font-weight: bold;
+  padding: 10px;  
 }
 
 .btn-success {
-  color: white;
-  background-color: lightcoral;
+  color: #0a0a0a;
+  background-color: #efb35a;
   border-color: black;
 }
 
@@ -78,4 +80,13 @@ button, input, optgroup, select, textarea {
   border-radius: 4px;
   box-shadow: inset 0 1px rgba(0,0,0,.075);
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#HairSalon2 {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#client {
+  float: left;
 }
