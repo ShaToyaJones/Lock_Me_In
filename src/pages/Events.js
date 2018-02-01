@@ -7,29 +7,43 @@ export default [
       'end': new Date(2018, 0, 2)
     },
     {
-      'title': 'Long Event',
+      'title': 'Long Event_Test',
       'start': new Date(2018, 1, 7),
       'end': new Date(2018, 1, 10)
     },
     {
-        'title': 'Final Presentation',
+        'title': 'Demo Day!',
         'start': new Date(2018, 1, 1),
         'end': new Date(2018, 1, 1)
       },
+      {
+        'title': 'Toya_Wrap-a-Locs',
+        'start':new Date(2018, 1, 3,14, 0, 0, 0),
+        'end': new Date(2018, 1, 3,15, 0, 0, 0)
+      },
+      {
+        'title': 'Katie_Blow Out',
+        'start':new Date(2018, 1, 12,14, 0, 0, 0),
+        'end': new Date(2018, 1, 12,15, 0, 0, 0)
+      },
     {
-      'title': 'DTS STARTS',
-      'start': new Date(2018, 2, 13, 0, 0, 0),
-      'end': new Date(2018, 2, 20, 0, 0, 0)
+      'title': 'Natural Hair Conference',
+      'start': new Date(2018, 1, 13, 0, 0, 0),
+      'end': new Date(2018, 1, 20, 0, 0, 0)
     },
   
     {
-      'title': 'DTS ENDS',
+      'title': 'Conference Ends',
       'start': new Date(2018, 10, 6, 0, 0, 0),
       'end': new Date(2018, 10, 13, 0, 0, 0)
     },
-  
     {
-      'title': 'Some Event',
+      'title': 'ShaToya Birthday',
+      'start':new Date(2018, 2, 14,14, 0, 0, 0),
+      'end': new Date(2018, 2, 14,15, 0, 0, 0)
+    },
+    {
+      'title': 'Sarah White_Bun',
       'start': new Date(2018, 3, 9, 0, 0, 0),
       'end': new Date(2018, 3, 9, 0, 0, 0)
     },
