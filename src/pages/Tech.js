@@ -19,18 +19,20 @@ const Tech = () =>
       <Row>
         <Col size="md-12">
           <ul>
-              <li>React-Bootstrap</li>
-              <li>React</li>
-              <li>MySQL</li>
-              <li>ORM(Sequelize)</li>
               <li>HTML</li>
+              <li>CSS</li>
               <li>JavaScript</li>
-              <li>API's</li>
-              <li>Heroku</li>
-              <li>Github</li>
+              <li>Bootstrap</li>
+              <li>React-Bootstrap</li>
               <li>Git</li>
-              <li>React</li>
+              <li>Github</li>
+              <li>Heroku</li>
               <li>Node.js</li>
+              <li>API's</li>
+              <li>MySQL</li>
+              <li>React</li>
+              <li>MVC Controller</li>
+              <li>React</li>
               <li>Assana</li>
               <li>React</li>
           </ul>
